@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
 
@@ -41,7 +43,17 @@ st.append("qweqwe");
 st.append("zzx");
         System.out.println(st);
       String  nst =   st.toString();
-        System.out.println(1+1);
+        System.out.println(1+1); st.append(1).append(2).append("123");
+
+st.insert(0,"1");
+        System.out.println(st);
+
+        Scanner sc = new Scanner(System.in);
+        sc.nextLine();
+        int  m = sc.nextInt();
+
+        System.out.println(m);
+        System.out.println(sc.nextLine());
 
         }
 
