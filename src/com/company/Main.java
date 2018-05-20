@@ -4,26 +4,36 @@ import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.lang.reflect.Array;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
 
-int ch = sc.nextInt();
+       int [] a ;
+       a = new int [100];
 
-switch (ch){
+        for (int i = 0; i < 100; i++) {
+            a[i]=i;
+        }
+        System.out.println(Arrays.toString(a));
 
-    case 1 :
-        System.out.println(1);
-                break;
-    case 2 :
-        System.out.println(2);
-                break;
-}
+        System.out.println(a.length);
 
+        for (int i: a
+             ) {
+            System.out.println(i);
+        }
+
+        for ( int i: a
+             ) {
+            System.out.println(i);
+        }
     }
 }
