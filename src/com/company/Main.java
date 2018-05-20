@@ -16,24 +16,23 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-       int [] a ;
-       a = new int [100];
-
-        for (int i = 0; i < 100; i++) {
-            a[i]=i;
-        }
-        System.out.println(Arrays.toString(a));
-
-        System.out.println(a.length);
-
-        for (int i: a
+        int[] a = {1, 2};
+        int[] b = {2, 8};
+        Arrays.fill(b, 7);
+        System.out.println(Arrays.toString(b));
+        int[][] c = new int[7][7];
+        int[][] k = {
+                {1, 2},
+                {8, 8}
+        };
+        for (int [] qq: k
              ) {
-            System.out.println(i);
-        }
+            for (int vv: qq
+                 ) {
+                System.out.println(vv);
+            }
 
-        for ( int i: a
-             ) {
-            System.out.println(i);
+            System.out.println(Arrays.deepToString(k));
         }
     }
 }
