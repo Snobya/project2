@@ -9,6 +9,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -16,23 +17,10 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        int[] a = {1, 2};
-        int[] b = {2, 8};
-        Arrays.fill(b, 7);
-        System.out.println(Arrays.toString(b));
-        int[][] c = new int[7][7];
-        int[][] k = {
-                {1, 2},
-                {8, 8}
-        };
-        for (int [] qq: k
-             ) {
-            for (int vv: qq
-                 ) {
-                System.out.println(vv);
-            }
 
-            System.out.println(Arrays.deepToString(k));
+        Date actualDate = new Date();
+        new Date().toString();
+        System.out.println(new Date().toString());
+        System.out.println(actualDate.toString());
         }
     }
-}
